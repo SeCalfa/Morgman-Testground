@@ -9,7 +9,7 @@ namespace Game.Code.Logic.NativeLogicOverrides
         [SerializeField] private float timeToAutoClose;
         [SerializeField] private float distanceToAutoClose;
         [Space]
-        [SerializeField] private Transform parent;
+        [SerializeField] private RelativeVector relativeVector;
         [SerializeField] private string openPosAnim;
         [SerializeField] private string closePosAnim;
         [SerializeField] private string openNegAnim;
@@ -55,8 +55,12 @@ namespace Game.Code.Logic.NativeLogicOverrides
 
         private bool InFrontOfDoor()
         {
+            var lhs = relativeVector == RelativeVector.Right
+                ? transform.parent.right
+                : transform.parent.forward;
+            
             var toPlayer = (PlayerController.Instance.transform.position - transform.position).normalized;
-            var dot = Vector3.Dot(parent.right, toPlayer);
+            var dot = Vector3.Dot(lhs, toPlayer);
             
             return dot > 0;
         }
