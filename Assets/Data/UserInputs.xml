@@ -1,0 +1,98 @@
+<InputScheme>
+  <Action Name="Move">
+    <Binding Index="1" Bind="Keyboard.w" />
+    <Binding Index="2" Bind="Keyboard.s" />
+    <Binding Index="3" Bind="Keyboard.a" />
+    <Binding Index="4" Bind="Keyboard.d" />
+    <Binding Index="5" Bind="DualShockGamepad.leftStick" />
+    <Binding Index="6" Bind="XInputController.leftStick" />
+  </Action>
+  <Action Name="Crouch">
+    <Binding Index="0" Bind="Keyboard.leftCtrl" />
+    <Binding Index="1" Bind="DualShockGamepad.buttonEast" />
+    <Binding Index="2" Bind="XInputController.buttonEast" />
+  </Action>
+  <Action Name="Prone">
+    <Binding Index="0" Bind="Keyboard.c" />
+    <Binding Index="1" Bind="DualShockGamepad.buttonEast" />
+    <Binding Index="2" Bind="XInputController.buttonEast" />
+  </Action>
+  <Action Name="Run">
+    <Binding Index="0" Bind="Keyboard.leftShift" />
+    <Binding Index="1" Bind="DualShockGamepad.leftStickPress" />
+    <Binding Index="2" Bind="XInputController.leftStickPress" />
+  </Action>
+  <Action Name="Jump">
+    <Binding Index="0" Bind="Keyboard.space" />
+    <Binding Index="1" Bind="DualShockGamepad.buttonSouth" />
+    <Binding Index="2" Bind="XInputController.buttonSouth" />
+  </Action>
+  <Action Name="Zoom">
+    <Binding Index="0" Bind="Mouse.rightButton" />
+    <Binding Index="1" Bind="DualShockGamepad.leftTrigger" />
+    <Binding Index="2" Bind="XInputController.leftTrigger" />
+  </Action>
+  <Action Name="Fire">
+    <Binding Index="0" Bind="Mouse.leftButton" />
+    <Binding Index="1" Bind="DualShockGamepad.rightTrigger" />
+    <Binding Index="2" Bind="XInputController.rightTrigger" />
+  </Action>
+  <Action Name="Reload">
+    <Binding Index="0" Bind="Keyboard.r" />
+    <Binding Index="1" Bind="DualShockGamepad.buttonNorth" />
+    <Binding Index="2" Bind="XInputController.buttonNorth" />
+  </Action>
+  <Action Name="Use">
+    <Binding Index="0" Bind="Keyboard.e" />
+    <Binding Index="1" Bind="DualShockGamepad.buttonWest" />
+    <Binding Index="2" Bind="XInputController.buttonWest" />
+  </Action>
+  <Action Name="Examine">
+    <Binding Index="0" Bind="Keyboard.q" />
+    <Binding Index="1" Bind="DualShockGamepad.buttonNorth" />
+    <Binding Index="2" Bind="XInputController.buttonNorth" />
+  </Action>
+  <Action Name="LeanLeft">
+    <Binding Index="0" Bind="Keyboard.y" />
+    <Binding Index="1" Bind="DualShockGamepad.leftShoulder" />
+    <Binding Index="2" Bind="XInputController.leftShoulder" />
+  </Action>
+  <Action Name="LeanRight">
+    <Binding Index="0" Bind="Keyboard.x" />
+    <Binding Index="1" Bind="DualShockGamepad.rightShoulder" />
+    <Binding Index="2" Bind="XInputController.rightShoulder" />
+  </Action>
+  <Action Name="UseItem1">
+    <Binding Index="0" Bind="Keyboard.1" />
+    <Binding Index="1" Bind="DualShockGamepad.dpad.up" />
+    <Binding Index="2" Bind="XInputController.dpad.up" />
+  </Action>
+  <Action Name="UseItem2">
+    <Binding Index="0" Bind="Keyboard.2" />
+    <Binding Index="1" Bind="DualShockGamepad.dpad.right" />
+    <Binding Index="2" Bind="XInputController.dpad.right" />
+  </Action>
+  <Action Name="UseItem3">
+    <Binding Index="0" Bind="Keyboard.3" />
+    <Binding Index="1" Bind="DualShockGamepad.dpad.down" />
+    <Binding Index="2" Bind="XInputController.dpad.down" />
+  </Action>
+  <Action Name="UseItem4">
+    <Binding Index="0" Bind="Keyboard.4" />
+    <Binding Index="1" Bind="DualShockGamepad.dpad.left" />
+    <Binding Index="2" Bind="XInputController.dpad.left" />
+  </Action>
+  <Action Name="Pause">
+    <Binding Index="0" Bind="Keyboard.escape" />
+    <Binding Index="1" Bind="DualShockGamepad.start" />
+    <Binding Index="2" Bind="XInputController.select" />
+  </Action>
+  <Action Name="Inventory">
+    <Binding Index="0" Bind="Keyboard.tab" />
+    <Binding Index="1" Bind="DualShockGamepad.touchpadButton" />
+    <Binding Index="2" Bind="XInputController.start" />
+  </Action>
+  <Action Name="Flashlight">
+    <Binding Index="0" Bind="Keyboard.v" />
+  </Action>
+</InputScheme>

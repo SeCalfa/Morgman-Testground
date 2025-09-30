@@ -22,12 +22,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 8d996537db885d34984c88142db377d5, type: 3}
     DropObject:
       GUID: 88693a571146c8a4195f98a018ac3fad
-      Object: {fileID: 8802696498958587224, guid: 88693a571146c8a4195f98a018ac3fad,
-        type: 3}
+      Object: {fileID: 8802696498958587224, guid: 88693a571146c8a4195f98a018ac3fad, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 1
@@ -75,12 +73,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 81111885754f4c348a89fd1ac30168b9, type: 3}
     DropObject:
       GUID: 0911bc34055ce3a4ca7b15329d3350f2
-      Object: {fileID: 1405219638246174339, guid: 0911bc34055ce3a4ca7b15329d3350f2,
-        type: 3}
+      Object: {fileID: 1405219638246174339, guid: 0911bc34055ce3a4ca7b15329d3350f2, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -130,12 +126,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 7482ef30a13a05d48a69fc07dd1b3c4d, type: 3}
     DropObject:
       GUID: e24f2821110deb042ba74c947c566c89
-      Object: {fileID: 7987036121776205876, guid: e24f2821110deb042ba74c947c566c89,
-        type: 3}
+      Object: {fileID: 7987036121776205876, guid: e24f2821110deb042ba74c947c566c89, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -183,12 +177,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 84f4db2bf4fc75d4d9b51a48a41f851b, type: 3}
     DropObject:
       GUID: 1e76fe5632125904f916715d6ceafd34
-      Object: {fileID: 7711606456648169220, guid: 1e76fe5632125904f916715d6ceafd34,
-        type: 3}
+      Object: {fileID: 7711606456648169220, guid: 1e76fe5632125904f916715d6ceafd34, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -240,12 +232,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 10f11875d736c1749ac101963156b279, type: 3}
     DropObject:
       GUID: fc5913149676ed24c833bdd868abf81f
-      Object: {fileID: 6226336788016599804, guid: fc5913149676ed24c833bdd868abf81f,
-        type: 3}
+      Object: {fileID: 6226336788016599804, guid: fc5913149676ed24c833bdd868abf81f, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -296,12 +286,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 50a12f29e51a41c48946f925900d9277, type: 3}
     DropObject:
       GUID: 9af7804dde023a54db7a1a68c64456aa
-      Object: {fileID: 2815891573619926925, guid: 9af7804dde023a54db7a1a68c64456aa,
-        type: 3}
+      Object: {fileID: 2815891573619926925, guid: 9af7804dde023a54db7a1a68c64456aa, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -352,12 +340,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 4f5443fa7668c5944b4d69a0565ef1f2, type: 3}
     DropObject:
       GUID: a905b179853c78f4babc0b2afd0f0ee6
-      Object: {fileID: 2628981987279529428, guid: a905b179853c78f4babc0b2afd0f0ee6,
-        type: 3}
+      Object: {fileID: 2628981987279529428, guid: a905b179853c78f4babc0b2afd0f0ee6, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -409,12 +395,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 6e4a688ef58ede54bb38225d2f175b6d, type: 3}
     DropObject:
       GUID: 69dcafcd8f0dfb24ebf366aa190e6cd8
-      Object: {fileID: 1115486705138341407, guid: 69dcafcd8f0dfb24ebf366aa190e6cd8,
-        type: 3}
+      Object: {fileID: 1115486705138341407, guid: 69dcafcd8f0dfb24ebf366aa190e6cd8, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -462,8 +446,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: d80daf5ad504abe42b3be179e70d722a, type: 3}
     DropObject:
       GUID: 0c2fdc878c74cdd408053eef88944384
-      Object: {fileID: 6283688053063081428, guid: 0c2fdc878c74cdd408053eef88944384,
-        type: 3}
+      Object: {fileID: 6283688053063081428, guid: 0c2fdc878c74cdd408053eef88944384, type: 3}
     PackDropObject:
       GUID: b0361dfa72b7f844ebc723879118657e
       Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
@@ -515,8 +498,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: ebd301e7f6b3b244eb745feb23429b1b, type: 3}
     DropObject:
       GUID: 91b0676a0ecbc994fb45001cb389e799
-      Object: {fileID: 3883263260219317132, guid: 91b0676a0ecbc994fb45001cb389e799,
-        type: 3}
+      Object: {fileID: 3883263260219317132, guid: 91b0676a0ecbc994fb45001cb389e799, type: 3}
     PackDropObject:
       GUID: b0361dfa72b7f844ebc723879118657e
       Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
@@ -626,8 +608,7 @@ MonoBehaviour:
       Object: {fileID: 1205774663, guid: 534ef8dee0da6c6479121520d34fbb7d, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -679,8 +660,7 @@ MonoBehaviour:
       Object: {fileID: 1504182863, guid: 5ef9ca28976b0434592bd04cced46f57, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -729,12 +709,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 56de961232e1a924488f4b6df3d8616a, type: 3}
     DropObject:
       GUID: c4f455bc33c7f7b4388e4fb0da7648af
-      Object: {fileID: 9167509522851509966, guid: c4f455bc33c7f7b4388e4fb0da7648af,
-        type: 3}
+      Object: {fileID: 9167509522851509966, guid: c4f455bc33c7f7b4388e4fb0da7648af, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -783,12 +761,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: d948a6b830123b24887bd199e99d37b6, type: 3}
     DropObject:
       GUID: 6ca5d0c60a0f6c04e9e03f4923cfdca4
-      Object: {fileID: 3458657775707933746, guid: 6ca5d0c60a0f6c04e9e03f4923cfdca4,
-        type: 3}
+      Object: {fileID: 3458657775707933746, guid: 6ca5d0c60a0f6c04e9e03f4923cfdca4, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -839,8 +815,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 4b3e9abb99bb4d84d8f23d1787f7fa88, type: 3}
     DropObject:
       GUID: 470d4e7298ec328489e3053e48ca195a
-      Object: {fileID: 5734375753707207479, guid: 470d4e7298ec328489e3053e48ca195a,
-        type: 3}
+      Object: {fileID: 5734375753707207479, guid: 470d4e7298ec328489e3053e48ca195a, type: 3}
     PackDropObject:
       GUID: b0361dfa72b7f844ebc723879118657e
       Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
@@ -894,8 +869,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: d9109142ae7c42e4a954273f40a9438f, type: 3}
     DropObject:
       GUID: 3f790a1927fda0b4f9b8af9565545320
-      Object: {fileID: 8517838539651564136, guid: 3f790a1927fda0b4f9b8af9565545320,
-        type: 3}
+      Object: {fileID: 8517838539651564136, guid: 3f790a1927fda0b4f9b8af9565545320, type: 3}
     PackDropObject:
       GUID: b0361dfa72b7f844ebc723879118657e
       Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
@@ -1001,8 +975,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 7ddcbb01a3052614ca56022898fff29e, type: 3}
     DropObject:
       GUID: ce3341f833eb0aa48b3b08919d538791
-      Object: {fileID: 7618360415291896815, guid: ce3341f833eb0aa48b3b08919d538791,
-        type: 3}
+      Object: {fileID: 7618360415291896815, guid: ce3341f833eb0aa48b3b08919d538791, type: 3}
     PackDropObject:
       GUID: b0361dfa72b7f844ebc723879118657e
       Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
@@ -1057,12 +1030,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 0b7ae86e598278645ba619ac8e23af17, type: 3}
     DropObject:
       GUID: 986b423873bae5c4cbd7c39b03a39936
-      Object: {fileID: 2031259906048697751, guid: 986b423873bae5c4cbd7c39b03a39936,
-        type: 3}
+      Object: {fileID: 2031259906048697751, guid: 986b423873bae5c4cbd7c39b03a39936, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 0
@@ -1117,8 +1088,7 @@ MonoBehaviour:
       Object: {fileID: 0}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 1
@@ -1169,8 +1139,7 @@ MonoBehaviour:
       Object: {fileID: 1430661221626180, guid: 3962e1e84dede9a459aec51aa60b77e6, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 0
@@ -1280,12 +1249,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 3abfb1af10f6bd142a2172ecf3aa6459, type: 3}
     DropObject:
       GUID: 4f8d39c1e3d346e4d9ea7a9421d99814
-      Object: {fileID: 34769618883522008, guid: 4f8d39c1e3d346e4d9ea7a9421d99814,
-        type: 3}
+      Object: {fileID: 34769618883522008, guid: 4f8d39c1e3d346e4d9ea7a9421d99814, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 0
@@ -1339,8 +1306,7 @@ MonoBehaviour:
       Object: {fileID: 0}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 0
@@ -1388,12 +1354,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 83ae4c4daf4be4c4f86efb3d1b48a54e, type: 3}
     DropObject:
       GUID: c8ea8cb9d029ba440b67b21312db6c38
-      Object: {fileID: 6573652275513946949, guid: c8ea8cb9d029ba440b67b21312db6c38,
-        type: 3}
+      Object: {fileID: 6573652275513946949, guid: c8ea8cb9d029ba440b67b21312db6c38, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 0
@@ -1445,8 +1409,7 @@ MonoBehaviour:
       Object: {fileID: 1552328439722386, guid: be9460d91714d3c4fb1a740259e81fca, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 1
@@ -1454,7 +1417,7 @@ MonoBehaviour:
       isDroppable: 1
       isRemovable: 0
       restoreStamina: 0
-      canExamine: 0
+      canExamine: 1
       canBindShortcut: 1
       combineAddItem: 0
       combineKeepItem: 0
@@ -1553,8 +1516,7 @@ MonoBehaviour:
       Object: {fileID: 1692309065835858, guid: f2a82c3d00f214347a674527a3742f83, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 0
@@ -1656,8 +1618,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 871f4398fca315f459f9525973479987, type: 3}
     DropObject:
       GUID: 907999eb6d2a6dc4499a29ac676b1257
-      Object: {fileID: 5894244905215305399, guid: 907999eb6d2a6dc4499a29ac676b1257,
-        type: 3}
+      Object: {fileID: 5894244905215305399, guid: 907999eb6d2a6dc4499a29ac676b1257, type: 3}
     PackDropObject:
       GUID: 7cc4433b585b00b4cba99e7564cf017a
       Object: {fileID: 1991033329804282, guid: 7cc4433b585b00b4cba99e7564cf017a, type: 3}
@@ -1711,8 +1672,7 @@ MonoBehaviour:
       Object: {fileID: 1597550490744132, guid: 75a05d4d6184c2944884a52334bfc3bb, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 0
@@ -1763,8 +1723,7 @@ MonoBehaviour:
       Object: {fileID: 1733325901836582, guid: 5f49bd3e5d6e091478b455a3f556a4c4, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 0
@@ -1815,8 +1774,7 @@ MonoBehaviour:
       Object: {fileID: 1045000472514846, guid: ed84609cc39177847ae6a19d28e47331, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 0
@@ -1867,8 +1825,7 @@ MonoBehaviour:
       Object: {fileID: 1597019828895162, guid: 7f0910e4bfb4eb442a80c6d599d471fd, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 0
@@ -1920,12 +1877,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 67d062eaf10a7884696b8bd87813bd83, type: 3}
     DropObject:
       GUID: 2383c135bfafea94d982856a250f0c76
-      Object: {fileID: 2008708847099431128, guid: 2383c135bfafea94d982856a250f0c76,
-        type: 3}
+      Object: {fileID: 2008708847099431128, guid: 2383c135bfafea94d982856a250f0c76, type: 3}
     PackDropObject:
       GUID: 7c685cec3e65a7a41896bf4ec2872708
-      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
-        type: 3}
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
     itemToggles:
       isStackable: 0
       isUsable: 0
@@ -1973,8 +1928,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 2c6f6fd85706aaf40a2e74545d978363, type: 3}
     DropObject:
       GUID: 2725a4ba9aacdc04aa980006570dcb02
-      Object: {fileID: 2096614195961198870, guid: 2725a4ba9aacdc04aa980006570dcb02,
-        type: 3}
+      Object: {fileID: 2096614195961198870, guid: 2725a4ba9aacdc04aa980006570dcb02, type: 3}
     PackDropObject:
       GUID: 7cc4433b585b00b4cba99e7564cf017a
       Object: {fileID: 1991033329804282, guid: 7cc4433b585b00b4cba99e7564cf017a, type: 3}
@@ -2025,12 +1979,10 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 1d0a5193cef423544936d63d6cdaad00, type: 3}
     DropObject:
       GUID: 02810956a7c7cbb42a2c4e9093ff9d78
-      Object: {fileID: 2356261206992197453, guid: 02810956a7c7cbb42a2c4e9093ff9d78,
-        type: 3}
+      Object: {fileID: 2356261206992197453, guid: 02810956a7c7cbb42a2c4e9093ff9d78, type: 3}
     PackDropObject:
       GUID: 2898479ab19b91e4bb7c0d5325e857c3
-      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
-        type: 3}
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3, type: 3}
     itemToggles:
       isStackable: 1
       isUsable: 0
@@ -2078,8 +2030,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: b0d4d965a216b5f499456c1f201bbb08, type: 3}
     DropObject:
       GUID: 1139d8eedc98ecf4391e359b50ccdca3
-      Object: {fileID: 1024846367479426655, guid: 1139d8eedc98ecf4391e359b50ccdca3,
-        type: 3}
+      Object: {fileID: 1024846367479426655, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
     PackDropObject:
       GUID: 
       Object: {fileID: 0}
@@ -2116,6 +2067,57 @@ MonoBehaviour:
       triggerCustomValue: 
       actionRemove: 0
       actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: 
+      descriptionKey: 
+  - Title: Flashlight NoModel
+    ID: 39
+    Description: FNM
+    itemType: 0
+    useActionType: 3
+    itemSprite: {fileID: 21300000, guid: a42e1977b805c3048b35e9d0526d7a4e, type: 3}
+    DropObject:
+      GUID: be9460d91714d3c4fb1a740259e81fca
+      Object: {fileID: 1552328439722386, guid: be9460d91714d3c4fb1a740259e81fca, type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708, type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 1
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: 0
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 1
       actionRestrictUse: 0
       actionRestrictCombine: 0
     combineSettings: []

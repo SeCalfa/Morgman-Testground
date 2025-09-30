@@ -2,13 +2,15 @@
 using ThunderWire.Utility;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
+using UnityEngine.Events;
 
 namespace HFPS.Systems
 {
     [RequireComponent(typeof(Rigidbody), typeof(AudioSource))]
     public class DynamicObjectPlank : MonoBehaviour, ISaveable
     {
-
+        [SerializeField] private UnityEvent onPlankBrake;
+        
         public float strenght;
         public AudioClip[] woodCrack;
 
@@ -46,8 +48,10 @@ namespace HFPS.Systems
             objRigidbody.AddForce(-Utilities.MainPlayerCamera().transform.forward * strenght * 10, ForceMode.Force);
             gameObject.tag = "Untagged";
             gameObject.layer = 0;
-
+            
             enabled = false;
+            
+            onPlankBrake?.Invoke();
         }
 
         public Dictionary<string, object> OnSave()

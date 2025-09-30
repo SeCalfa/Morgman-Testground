@@ -36,6 +36,7 @@ namespace HFPS.Editors
         public SerializedProperty sp_startRot;
         public SerializedProperty sp_useSR;
         public SerializedProperty sp_doorStopSpeed;
+        public SerializedProperty sp_onDoorInteract;
         #endregion
 
         #region Drawer
@@ -111,6 +112,8 @@ namespace HFPS.Editors
             sp_UnlockSound = serializedObject.FindProperty("UnlockSound");
             sp_LeverUpSound = serializedObject.FindProperty("LeverUpSound");
             sp_DebugAngle = serializedObject.FindProperty("DebugAngle");
+
+            sp_onDoorInteract = serializedObject.FindProperty("onDoorInteract");
         }
 
         public override void OnInspectorGUI()
@@ -218,6 +221,9 @@ namespace HFPS.Editors
                 EditorGUILayout.PropertyField(sp_Close, new GUIContent("Close Sound"));
                 EditorGUILayout.PropertyField(sp_UnlockSound, new GUIContent("Unlock Sound"));
                 EditorGUILayout.PropertyField(sp_LockedTry, new GUIContent("Locked Try Sound"));
+                
+                EditorGUILayout.Space();
+                EditorGUILayout.PropertyField(sp_onDoorInteract, new GUIContent("On Interact With Animated Door"));
 
                 if (int_type == Type_Interact.Mouse)
                 {

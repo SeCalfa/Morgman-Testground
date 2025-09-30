@@ -10,6 +10,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using ThunderWire.Helpers;
 using HFPS.Player;
+using UnityEngine.Serialization;
 
 #if TW_LOCALIZATION_PRESENT
 using ThunderWire.Localization;
@@ -147,6 +148,12 @@ namespace HFPS.Systems
         public bool isLocked;
         public bool isInvoked;
         public float Angle;
+        
+        #region Custom
+
+        public UnityEvent onDoorInteract;
+        
+        #endregion
 
         private bool invokeUp;
         private bool isPlayed;
@@ -630,6 +637,8 @@ namespace HFPS.Systems
                 {
                     if (!m_Animation.isPlaying && !Hold)
                     {
+                        onDoorInteract?.Invoke();
+                        
                         if (!isOpened)
                         {
                             m_Animation.Play(useAnim);
