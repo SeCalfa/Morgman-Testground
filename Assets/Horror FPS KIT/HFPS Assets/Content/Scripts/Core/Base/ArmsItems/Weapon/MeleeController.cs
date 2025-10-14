@@ -7,6 +7,7 @@ using System.Collections;
 using UnityEngine;
 using ThunderWire.Input;
 using HFPS.Systems;
+using UnityEngine.Events;
 
 namespace HFPS.Player
 {
@@ -61,6 +62,9 @@ namespace HFPS.Player
         [Space(5)]
         public AudioClip SwaySound;
         [Range(0, 1)] public float SwayVolume = 1f;
+        
+        [Header("Morgman")]
+        [SerializeField] private UnityEvent onBulletFire;
 
         private bool AttackKey;
 
@@ -199,6 +203,8 @@ namespace HFPS.Player
         IEnumerator Hit(RaycastHit hit, Vector3 dir)
         {
             yield return new WaitForSeconds(HitWaitDelay);
+            
+            onBulletFire?.Invoke();
 
             hit.collider.SendMessageUpwards("ApplyDamage", Random.Range(AttackDamage.x, AttackDamage.y), SendMessageOptions.DontRequireReceiver);
 

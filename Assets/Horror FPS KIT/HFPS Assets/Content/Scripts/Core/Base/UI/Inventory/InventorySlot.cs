@@ -264,6 +264,28 @@ namespace HFPS.UI
             }
         }
 
+        // public void OnPointerUp(PointerEventData eventData)
+        // {
+        //     if (isPointerDown)
+        //     {
+        //         if (!isSelected)
+        //         {
+        //             Select();
+        //         }
+        //         else if (!isCombineCandidate && !isItemSelect)
+        //         {
+        //             ShowContext();
+        //         }
+        //         else
+        //         {
+        //             CombineSelect();
+        //         }
+        //
+        //         isPointerDown = false;
+        //     }
+        // }
+        
+        // Morgman
         public void OnPointerUp(PointerEventData eventData)
         {
             if (isPointerDown)
@@ -274,10 +296,19 @@ namespace HFPS.UI
                 }
                 else if (!isCombineCandidate && !isItemSelect)
                 {
-                    ShowContext();
+                    if (eventData.button == PointerEventData.InputButton.Left)
+                    {
+                        inventory.UseSelectedItem();
+                        inventory.Deselect(slotID);
+                    }
+                    else if (eventData.button == PointerEventData.InputButton.Right)
+                    {
+                        inventory.DropItemGround();
+                    }
                 }
                 else
                 {
+                    print("CombineSelect");
                     CombineSelect();
                 }
 

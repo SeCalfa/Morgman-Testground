@@ -10,6 +10,7 @@ using UnityEngine;
 using Newtonsoft.Json.Linq;
 using ThunderWire.Input;
 using HFPS.Systems;
+using UnityEngine.Events;
 
 namespace HFPS.Player
 {
@@ -217,6 +218,9 @@ namespace HFPS.Player
         private bool inputWait;
         private float waitTime;
         #endregion
+        
+        [Header("Morgman")]
+        [SerializeField] private UnityEvent onBulletFire;
 
         void Awake()
         {
@@ -535,6 +539,8 @@ namespace HFPS.Player
                 kickbackSettings.kickTime, kickbackSettings.kickReturnSpeed);
 
             muzzleShown = true;
+            
+            onBulletFire?.Invoke();
         }
 
         void ShowBulletMark(RaycastHit hit)

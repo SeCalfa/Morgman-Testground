@@ -9,19 +9,19 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
         private InputAction _input;
 
         private StaticInventoryPresenter _staticInventoryPresenter;
-        private GameObject _flashlight;
+        private NewFlashlight _flashlight;
         private FlashlightPresenter _flashlightPanel;
         private float _powerPercentPerSecond;
 
         private bool _active;
         private float _currentPower;
-        public int ActiveBatteries { get; private set; } = 4;
+        public int ActiveBatteries { get; private set; } = 1;
 
         private const string FLASHLIGHT_ACTION_NAME = "Flashlight";
         private const float MAX_POWER = 100f;
         private const int MAX_BATTERIES = 5;
 
-        public void Construct(StaticInventoryPresenter staticInventoryPresenter, GameObject flashlight, FlashlightPresenter flashlightPanel, float powerPercentPerSecond)
+        public void Construct(StaticInventoryPresenter staticInventoryPresenter, NewFlashlight flashlight, FlashlightPresenter flashlightPanel, float powerPercentPerSecond)
         {
             _input = InputHandler.Instance.inputActionAsset.FindAction(FLASHLIGHT_ACTION_NAME, true);
             
@@ -37,7 +37,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
 
         public void Update()
         {
-            if (_input.WasPressedThisFrame() && (_currentPower > 0f || ActiveBatteries > 0))
+            if (_input.WasPressedThisFrame())
             {
                 ToggleLight(true);
             }
@@ -52,14 +52,21 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
                 _currentPower = Mathf.Clamp(_currentPower - Time.deltaTime * _powerPercentPerSecond, 0f, MAX_POWER);
                 
                 _flashlightPanel.UpdateProgress(_currentPower, MAX_POWER);
+                
+                if (_currentPower > 0f || ActiveBatteries > 0)
+                {
+                    _flashlight.Toggle(true, true);
+                }
+                else
+                {
+                    _flashlight.Toggle(true);
+                    
+                    return;
+                }
 
                 if (_currentPower == 0)
                 {
-                    var batteryUsed = UseBattery();
-                    if (!batteryUsed)
-                    {
-                        ToggleLight(false);
-                    }
+                    UseBattery();
                 }
             }
         }
@@ -91,10 +98,15 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
 
         private void ToggleLight(bool isOn)
         {
-            _flashlight.SetActive(isOn);
-            
-            if (isOn) _flashlightPanel.Show();
-            else _flashlightPanel.Hide();
+            if (isOn)
+            {
+                _flashlightPanel.Show();
+            }
+            else
+            {
+                _flashlightPanel.Hide();
+                _flashlight.Toggle(false);
+            }
                 
             _active = isOn;
         }

@@ -11,11 +11,13 @@ namespace Game.Code.Logic.NativeLogicOverrides
         [SerializeField] private StaticInventoryPresenter staticInventoryPresenter;
         [Space]
         [Header("Flashlight")]
-        [SerializeField] private GameObject flashlight;
+        [SerializeField] private NewFlashlight flashlight;
         [SerializeField] private FlashlightPresenter flashlightPanel;
         [Tooltip("Amount of battery power used per second")]
         [SerializeField] private float powerPercentPerSecond;
         [SerializeField] private float batteryPower;
+        [Range(0, 100)]
+        [SerializeField] private float flashlightPercent;
         
         public static StaticInventoryManager Instance;
 
@@ -36,6 +38,8 @@ namespace Game.Code.Logic.NativeLogicOverrides
 
         public void AddFlashlight()
         {
+            flashlight.Construct(flashlightPercent);
+            
             var flashlightItem = new FlashlightItem();
             flashlightItem.Construct(staticInventoryPresenter, flashlight, flashlightPanel, powerPercentPerSecond);
             

@@ -93,6 +93,9 @@
     <Binding Index="2" Bind="XInputController.start" />
   </Action>
   <Action Name="Flashlight">
-    <Binding Index="0" Bind="Keyboard.v" />
+    <Binding Index="0" Bind="Keyboard.t" />
+  </Action>
+  <Action Name="Notebook">
+    <Binding Index="0" Bind="Keyboard.j" />
   </Action>
 </InputScheme>
