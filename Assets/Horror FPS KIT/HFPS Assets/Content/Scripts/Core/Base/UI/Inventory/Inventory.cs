@@ -159,6 +159,7 @@ namespace HFPS.Systems
         public CrossPlatformSettings cpSettings = new CrossPlatformSettings();
         public StartingItems startingItems = new StartingItems();
 
+        public event Action OnAutoBindShortcut; // Morgman
         public static event Action OnInventoryInitialized;
         public static bool IsInitialized { get; protected set; }
 
@@ -1351,6 +1352,7 @@ namespace HFPS.Systems
                         var newShortcut = avaiableShortcuts.FirstOrDefault();
                         ShortcutBind(itemID, slotID, newShortcut.Value);
 
+                        OnAutoBindShortcut?.Invoke();
                         return newShortcut.Key;
                     }
                 }

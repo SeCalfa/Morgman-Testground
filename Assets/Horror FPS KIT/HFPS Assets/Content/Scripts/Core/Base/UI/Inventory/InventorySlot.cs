@@ -3,6 +3,7 @@
  * ver. 1.3
 */
 
+using Game.Code.Logic.NativeLogicOverrides.BindPanel;
 using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.UI;
@@ -165,6 +166,9 @@ namespace HFPS.UI
             inventory.panels.ItemInfoPanel.SetActive(true);
             inventory.isSelecting = true;
             isSelected = true;
+            
+            // Morgman
+            // BindPanelManager.Instance.ToggleActive(true);
         }
 
         /// <summary>
@@ -300,10 +304,15 @@ namespace HFPS.UI
                     {
                         inventory.UseSelectedItem();
                         inventory.Deselect(slotID);
+                        // BindPanelManager.Instance.ToggleActive(false);
                     }
                     else if (eventData.button == PointerEventData.InputButton.Right)
                     {
                         inventory.DropItemGround();
+                        
+                        BindPanelManager.Instance.RemoveShortcut(slotID);
+                        BindPanelManager.Instance.UpdateBind();
+                        // BindPanelManager.Instance.ToggleActive(false);
                     }
                 }
                 else
