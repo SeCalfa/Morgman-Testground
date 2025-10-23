@@ -237,11 +237,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114722199832300842, guid: ff44126af6bf4724cb90280d14376908, type: 3}
+      propertyPath: itemTitle
+      value: 9mm Rounds
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff44126af6bf4724cb90280d14376908, type: 3}
+--- !u!1 &17441960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1359039285057922, guid: ff44126af6bf4724cb90280d14376908, type: 3}
+  m_PrefabInstance: {fileID: 17441959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &18189893 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9094588442045993211, guid: 19448d65b6c39844086eb8addda461e5, type: 3}
@@ -471,6 +480,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1390868427}
     m_Modifications:
+    - target: {fileID: 5894244905215305392, guid: 907999eb6d2a6dc4499a29ac676b1257, type: 3}
+      propertyPath: itemTitle
+      value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894244905215305392, guid: 907999eb6d2a6dc4499a29ac676b1257, type: 3}
+      propertyPath: floatingIcon
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5894244905215305399, guid: 907999eb6d2a6dc4499a29ac676b1257, type: 3}
       propertyPath: m_Name
       value: IA_Axe
@@ -518,7 +535,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5894244905215305399, guid: 907999eb6d2a6dc4499a29ac676b1257, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1477150980}
   m_SourcePrefab: {fileID: 100100000, guid: 907999eb6d2a6dc4499a29ac676b1257, type: 3}
 --- !u!1 &68615106
 GameObject:
@@ -1207,7 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fcb51f6d678d2498af4fb5f59a2c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemTitle: Battery
+  itemTitle: 9mm Rounds
   itemType: 1
   examineType: 1
   examineRotate: 3
@@ -2003,6 +2023,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
+      propertyPath: itemTitle
+      value: 9mm Rounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: disableType
       value: 1
       objectReference: {fileID: 0}
@@ -2531,20 +2555,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
       propertyPath: FloatingIcons.Array.size
-      value: 0
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
       propertyPath: FloatingIcons.Array.data[0]
       value: 
-      objectReference: {fileID: 120082185}
+      objectReference: {fileID: 1159777662}
     - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
       propertyPath: FloatingIcons.Array.data[1]
       value: 
-      objectReference: {fileID: 764643916}
+      objectReference: {fileID: 2133876145}
     - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
       propertyPath: FloatingIcons.Array.data[2]
       value: 
+      objectReference: {fileID: 139504318}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[3]
+      value: 
+      objectReference: {fileID: 428230814}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[4]
+      value: 
+      objectReference: {fileID: 910655636}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[5]
+      value: 
+      objectReference: {fileID: 1819969586}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[6]
+      value: 
+      objectReference: {fileID: 926078988}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[7]
+      value: 
+      objectReference: {fileID: 2033134557}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[8]
+      value: 
+      objectReference: {fileID: 603584693}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[9]
+      value: 
+      objectReference: {fileID: 17441960}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[10]
+      value: 
+      objectReference: {fileID: 1552328380467405}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[11]
+      value: 
+      objectReference: {fileID: 2573501655367609268}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[12]
+      value: 
+      objectReference: {fileID: 148604768}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[13]
+      value: 
+      objectReference: {fileID: 1470937332}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[14]
+      value: 
       objectReference: {fileID: 648422190}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[15]
+      value: 
+      objectReference: {fileID: 764643916}
+    - target: {fileID: 4821262218662400197, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
+      propertyPath: FloatingIcons.Array.data[16]
+      value: 
+      objectReference: {fileID: 120082185}
     - target: {fileID: 4821262218662400207, guid: 0b51d2ebb374c494db8ca28cf91de5d4, type: 3}
       propertyPath: m_Name
       value: _GAMEUI
@@ -2634,6 +2714,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114573403405879402, guid: 33b6fd48297dee3409c95b1dc0026c6c, type: 3}
+      propertyPath: itemTitle
+      value: Pistol
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2703,6 +2787,10 @@ PrefabInstance:
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: itemType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
+      propertyPath: itemTitle
+      value: 9mm Rounds
       objectReference: {fileID: 0}
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: disableType
@@ -3012,11 +3100,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114722199832300842, guid: ff44126af6bf4724cb90280d14376908, type: 3}
+      propertyPath: itemTitle
+      value: 9mm Rounds
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff44126af6bf4724cb90280d14376908, type: 3}
+--- !u!1 &603584693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1359039285057922, guid: ff44126af6bf4724cb90280d14376908, type: 3}
+  m_PrefabInstance: {fileID: 603584692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &604388753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3076,6 +3173,10 @@ PrefabInstance:
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: itemType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
+      propertyPath: itemTitle
+      value: 9mm Rounds
       objectReference: {fileID: 0}
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: disableType
@@ -3328,10 +3429,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: IA_Shotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 2096614195961198871, guid: 2725a4ba9aacdc04aa980006570dcb02, type: 3}
+      propertyPath: itemTitle
+      value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096614195961198871, guid: 2725a4ba9aacdc04aa980006570dcb02, type: 3}
+      propertyPath: useInvTitle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096614195961198871, guid: 2725a4ba9aacdc04aa980006570dcb02, type: 3}
+      propertyPath: floatingIcon
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2096614195961198870, guid: 2725a4ba9aacdc04aa980006570dcb02, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 878277058}
   m_SourcePrefab: {fileID: 100100000, guid: 2725a4ba9aacdc04aa980006570dcb02, type: 3}
 --- !u!1001 &647994865
 PrefabInstance:
@@ -3392,6 +3508,10 @@ PrefabInstance:
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: itemType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
+      propertyPath: itemTitle
+      value: 9mm Rounds
       objectReference: {fileID: 0}
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: disableType
@@ -3991,6 +4111,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 378998028047466308, guid: 2725a4ba9aacdc04aa980006570dcb02, type: 3}
   m_PrefabInstance: {fileID: 639766255}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &878277058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764643916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6974dbc72c8f9d042868729f4ea8f811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &880284091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4151,6 +4283,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8ea8cb9d029ba440b67b21312db6c38, type: 3}
+--- !u!1 &926078988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6573652275513946949, guid: c8ea8cb9d029ba440b67b21312db6c38, type: 3}
+  m_PrefabInstance: {fileID: 926078987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &937288301
 GameObject:
   m_ObjectHideFlags: 0
@@ -5356,6 +5493,10 @@ PrefabInstance:
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: itemType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
+      propertyPath: itemTitle
+      value: 9mm Rounds
       objectReference: {fileID: 0}
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: disableType
@@ -6667,7 +6808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fcb51f6d678d2498af4fb5f59a2c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemTitle: Battery
+  itemTitle: 9mm Rounds
   itemType: 1
   examineType: 1
   examineRotate: 3
@@ -6817,6 +6958,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5894244905215343255, guid: 907999eb6d2a6dc4499a29ac676b1257, type: 3}
   m_PrefabInstance: {fileID: 36793912}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1477150980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648422190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6974dbc72c8f9d042868729f4ea8f811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1477556446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9369,6 +9522,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2356261206992197452, guid: 02810956a7c7cbb42a2c4e9093ff9d78, type: 3}
+      propertyPath: itemTitle
+      value: 12 Gauge Shells
+      objectReference: {fileID: 0}
     - target: {fileID: 2356261206992197453, guid: 02810956a7c7cbb42a2c4e9093ff9d78, type: 3}
       propertyPath: m_Name
       value: IR_12Gauge_Ammo
@@ -9418,6 +9575,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02810956a7c7cbb42a2c4e9093ff9d78, type: 3}
+--- !u!1 &2033134557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2356261206992197453, guid: 02810956a7c7cbb42a2c4e9093ff9d78, type: 3}
+  m_PrefabInstance: {fileID: 2033134556}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &2041487536 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1778010094, guid: 6d7a23e3f9f352c48ac4db02b1685849, type: 3}
@@ -9482,6 +9644,10 @@ PrefabInstance:
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: itemType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
+      propertyPath: itemTitle
+      value: 9mm Rounds
       objectReference: {fileID: 0}
     - target: {fileID: 1024846367479426654, guid: 1139d8eedc98ecf4391e359b50ccdca3, type: 3}
       propertyPath: disableType
@@ -9870,7 +10036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fcb51f6d678d2498af4fb5f59a2c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemTitle: Flashlight NoModel
+  itemTitle: 9mm Rounds
   itemType: 1
   examineType: 1
   examineRotate: 3
@@ -10410,7 +10576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fcb51f6d678d2498af4fb5f59a2c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemTitle: Battery
+  itemTitle: 9mm Rounds
   itemType: 1
   examineType: 1
   examineRotate: 3
