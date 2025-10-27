@@ -1,8 +1,6 @@
-using System;
 using System.Linq;
 using HFPS.Systems;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Game.Code.Logic.NativeLogicOverrides.BindPanel
 {
@@ -13,8 +11,6 @@ namespace Game.Code.Logic.NativeLogicOverrides.BindPanel
 
         private Inventory.ShortcutModel _selectedShortcut;
 
-        public Transform DragParent => dragParent;
-        
         public static BindPanelManager Instance;
         
         private void Awake()
@@ -25,44 +21,6 @@ namespace Game.Code.Logic.NativeLogicOverrides.BindPanel
             }
 
             Inventory.Instance.OnAutoBindShortcut += UpdateBind;
-
-            // ToggleActive(false);
-        }
-
-        private void Update()
-        {
-            // Inventory.Instance.Shortcuts.ForEach(s => print($"{s.shortcut}"));
-            print("Shortcuts: " + Inventory.Instance.Shortcuts.Count);
-        }
-
-        public void SetSelectedShortcut(Inventory.ShortcutModel selectedShortcut)
-        {
-            if (_selectedShortcut == null)
-            {
-                // New slot pressed
-                _selectedShortcut = selectedShortcut;
-            }
-            else if (_selectedShortcut == selectedShortcut)
-            {
-                // The same slot pressed
-                _selectedShortcut = null;
-            }
-            else
-            {
-                // New slot while active slot exist pressed
-                var selectedSlotId = _selectedShortcut.slot;
-                var selectedControl = _selectedShortcut.shortcut;
-                
-                var targetSlotId = selectedShortcut.slot;
-                var targetControl = selectedShortcut.shortcut;
-                
-                Inventory.Instance.UpdateShortcut(selectedControl, targetSlotId);
-                Inventory.Instance.UpdateShortcut(targetControl, selectedSlotId);
-                
-                _selectedShortcut = null;
-                
-                UpdateBind();
-            }
         }
 
         public void RemoveShortcut(int slotId)
@@ -77,40 +35,15 @@ namespace Game.Code.Logic.NativeLogicOverrides.BindPanel
         
         public void UpdateBind()
         {
-            // HERE
-            print("Shortcuts: " + Inventory.Instance.Shortcuts.Count);
-            var sortedShortcut = Inventory.Instance.Shortcuts.OrderBy(s => s.slot).ToList();
-            for (var index = 0; index < bindButtons.Length; index++)
-            {
-                if (index >= sortedShortcut.Count)
-                {
-                    bindButtons[index].UpdateLogo(null);
-                    continue;
-                }
-                // var shortcutName = $"UseItem{index + 1}";
-                var shortcutName = sortedShortcut[index].shortcut;
-                var shortcut = sortedShortcut.Find(s => s.shortcut == shortcutName);
-                
-                bindButtons[index].UpdateLogo(shortcut);
-            }
-            
-            // var shortcuts = Inventory.Instance.Shortcuts.OrderBy(s => s.shortcut).ToList();
-            // for (var index = 0; index < shortcuts.Count; index++)
-            // {
-            //     if (index == bindButtons.Length)
-            //     {
-            //         break;
-            //     }
-            //
-            //     // Привязка к списку
-            //     var shortcutModel = shortcuts[index];
-            //     bindButtons[index].UpdateLogo(shortcutModel);
-            // }
-        }
+            var shortcut1 = Inventory.Instance.Shortcuts.FirstOrDefault(shortcut => shortcut.shortcut == "UseItem1");
+            var shortcut2 = Inventory.Instance.Shortcuts.FirstOrDefault(shortcut => shortcut.shortcut == "UseItem2");
+            var shortcut3 = Inventory.Instance.Shortcuts.FirstOrDefault(shortcut => shortcut.shortcut == "UseItem3");
+            var shortcut4 = Inventory.Instance.Shortcuts.FirstOrDefault(shortcut => shortcut.shortcut == "UseItem4");
 
-        // public void ToggleActive(bool toggle)
-        // {
-        //     gameObject.SetActive(toggle);
-        // }
+            bindButtons[0].UpdateLogo(shortcut1);
+            bindButtons[1].UpdateLogo(shortcut2);
+            bindButtons[2].UpdateLogo(shortcut3);
+            bindButtons[3].UpdateLogo(shortcut4);
+        }
     }
 }

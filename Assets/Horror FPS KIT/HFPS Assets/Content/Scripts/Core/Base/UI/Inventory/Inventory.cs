@@ -2673,7 +2673,7 @@ namespace HFPS.Systems
         /// <summary>
         /// Get InventoryItemData from slot
         /// </summary>
-        InventoryItemData ItemDataOfSlot(int slotID)
+        public InventoryItemData ItemDataOfSlot(int slotID)
         {
             InventoryItemData itemData = Slots[slotID].GetComponentInChildren<InventoryItemData>();
             if (itemData != null) return itemData;

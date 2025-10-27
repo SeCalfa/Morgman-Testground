@@ -4517,6 +4517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83260de7900b39c458c0cd0a3db624e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotId: 3
+  control: UseItem4
   logo: {fileID: 1777495424}
 --- !u!114 &963048878
 MonoBehaviour:
@@ -4647,6 +4649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83260de7900b39c458c0cd0a3db624e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotId: 2
+  control: UseItem3
   logo: {fileID: 1384460212}
 --- !u!4 &984462458 stripped
 Transform:
@@ -5989,6 +5993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83260de7900b39c458c0cd0a3db624e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotId: 0
+  control: UseItem1
   logo: {fileID: 1847231785}
 --- !u!1001 &1325679168
 PrefabInstance:
@@ -7338,6 +7344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83260de7900b39c458c0cd0a3db624e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotId: 1
+  control: UseItem2
   logo: {fileID: 1399684939}
 --- !u!1001 &1591538136
 PrefabInstance:

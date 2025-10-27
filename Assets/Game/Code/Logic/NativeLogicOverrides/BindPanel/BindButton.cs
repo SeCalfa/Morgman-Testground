@@ -6,17 +6,16 @@ using UnityEngine.UI;
 
 namespace Game.Code.Logic.NativeLogicOverrides.BindPanel
 {
-    public class BindButton : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
+    public class BindButton : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
+        [SerializeField] private int slotId;
+        [SerializeField] private string control;
+        [Space]
         [SerializeField] private Image logo;
 
         private RectTransform _logoRectTransform;
         private Canvas _canvas;
         private Inventory.ShortcutModel _shortcutModel;
-
-        public Inventory.ShortcutModel ShortcutModel => _shortcutModel;
-
-        public static bool IsDrag;
 
         private void Awake()
         {
@@ -28,24 +27,14 @@ namespace Game.Code.Logic.NativeLogicOverrides.BindPanel
         {
             _shortcutModel = shortcutModel;
 
-            if (_shortcutModel != null)
+            if (shortcutModel != null)
             {
-                print(shortcutModel.shortcut + " | not empty");
-                logo.sprite = _shortcutModel.item.ItemSprite;
                 logo.gameObject.SetActive(true);
+                logo.sprite = shortcutModel.item.ItemSprite;
             }
             else
             {
-                print("empty");
                 logo.gameObject.SetActive(false);
-            }
-        }
-
-        public void OnPointerDown(PointerEventData eventData)
-        {
-            if (eventData.button == PointerEventData.InputButton.Left && _shortcutModel != null)
-            {
-                // BindPanelManager.Instance.SetSelectedShortcut(_shortcutModel, logo);
             }
         }
 
@@ -54,7 +43,6 @@ namespace Game.Code.Logic.NativeLogicOverrides.BindPanel
             if (eventData.button == PointerEventData.InputButton.Left && _shortcutModel != null)
             {
                 logo.transform.SetParent(BindPanelManager.Instance.transform);
-                BindPanelManager.Instance.SetSelectedShortcut(_shortcutModel);
             }
         }
 
@@ -70,22 +58,44 @@ namespace Game.Code.Logic.NativeLogicOverrides.BindPanel
         {
             var results = new List<RaycastResult>();
             EventSystem.current.RaycastAll(eventData, results);
-            
-            foreach (var result in results)
-            {
-                if (eventData.button == PointerEventData.InputButton.Left && _shortcutModel != null)
-                {
-                    var button = result.gameObject.GetComponent<BindButton>();
 
-                    if (button != null && button != this)
-                    {
-                        // Shortcut replaced
-                        BindPanelManager.Instance.SetSelectedShortcut(button.ShortcutModel);
-                    }
+            if (eventData.button == PointerEventData.InputButton.Left && _shortcutModel != null)
+            {
+                var button = results[0].gameObject.GetComponent<BindButton>();
+
+                if (button == null || button == this)
+                {
+                    // Target is on empty place or the same shortcut
+                } 
+                else if (button._shortcutModel == null)
+                {
+                    // Shortcut on empty slot
                     
-                    logo.transform.SetParent(transform);
-                    logo.transform.localPosition = Vector3.zero;
+                    var itemData = Inventory.Instance.ItemDataOfSlot(_shortcutModel.slot);
+                    Inventory.Instance.ShortcutBind(itemData.itemID, itemData.slotID, button.control);
                 }
+                else if (button._shortcutModel != null)
+                {
+                    // Shortcut replaced
+
+                    var targetShortcut = Inventory.Instance.Shortcuts.Find(s => s.shortcut == button.control);
+                    
+                    var currentItemData = Inventory.Instance.ItemDataOfSlot(_shortcutModel.slot);
+                    var targetItemData = Inventory.Instance.ItemDataOfSlot(targetShortcut.slot);
+
+                    var currentItemId = currentItemData.itemID;
+                    var currentSlotId = currentItemData.slotID;
+                    var targetItemId = targetItemData.itemID;
+                    var targetSlotId = targetItemData.slotID;
+
+                    Inventory.Instance.ShortcutBind(currentItemId, currentSlotId, button.control);
+                    Inventory.Instance.ShortcutBind(targetItemId, targetSlotId, control);
+                }
+
+                logo.transform.SetParent(transform);
+                logo.transform.localPosition = Vector3.zero;
+                
+                BindPanelManager.Instance.UpdateBind();
             }
         }
     }
