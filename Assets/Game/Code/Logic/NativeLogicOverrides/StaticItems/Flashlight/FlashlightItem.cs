@@ -20,6 +20,11 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
         private const string FLASHLIGHT_ACTION_NAME = "Flashlight";
         private const float MAX_POWER = 100f;
         private const int MAX_BATTERIES = 5;
+        
+        public FlashlightItem(GameObject item)
+        {
+            item.SetActive(true);
+        }
 
         public void Construct(StaticInventoryPresenter staticInventoryPresenter, NewFlashlight flashlight, FlashlightPresenter flashlightPanel, float powerPercentPerSecond)
         {
