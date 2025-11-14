@@ -1,119 +1,77 @@
+using System.Collections.Generic;
+using Game.Code.Logic.NativeLogicOverrides.StaticItems.Item;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Game.Code.Logic.NativeLogicOverrides
 {
+    public class StaticItem
+    {
+        public StaticItemRenderer StaticItemRenderer { get; set; }
+        public StaticItemType ItemType { get; set; }
+        public int ItemCount { get; set; }
+    }
+    
     public class StaticInventoryPresenter : MonoBehaviour
     {
-        [Header("Flashlight")]
-        [SerializeField] private GameObject flashlightItem;
-        [SerializeField] private GameObject flashlightFillFrame;
-        [SerializeField] private GameObject flashlightEmptyFrame;
-        [SerializeField] private GameObject flashlightLogo;
-        [SerializeField] private Text flashlightBatteries;
-        [Header("Health")]
-        [SerializeField] private GameObject healthItem;
-        [SerializeField] private GameObject healthFillFrame;
-        [SerializeField] private GameObject healthEmptyFrame;
-        [SerializeField] private GameObject healthLogo;
-        [SerializeField] private Text healthPoints;
-        [Header("Stamina")]
-        [SerializeField] private GameObject staminaItem;
-        [SerializeField] private GameObject staminaFillFrame;
-        [SerializeField] private GameObject staminaEmptyFrame;
-        [SerializeField] private GameObject staminaLogo;
-        [SerializeField] private Text staminaPoints;
-        [Header("Damage")]
-        [SerializeField] private GameObject damageItem;
-        [SerializeField] private GameObject damageFillFrame;
-        [SerializeField] private GameObject damageEmptyFrame;
-        [SerializeField] private GameObject damageLogo;
-        [SerializeField] private Text damagePoints;
-        [Header("Backpack")]
-        [SerializeField] private GameObject backpackItem;
-        [SerializeField] private GameObject backpackFillFrame;
-        [SerializeField] private GameObject backpackEmptyFrame;
-        [SerializeField] private GameObject backpackLogo;
-        [SerializeField] private Text backpackPoints;
+        [Space]
+        [SerializeField] private GameObject itemPrefab;
+        [SerializeField] private Transform itemContainer;
 
-        private void Start()
+        private readonly List<StaticItem> _items = new();
+
+        public int AddItem(StaticItemType itemType, int itemCount = 1)
         {
-            StaticInventoryManager.Instance.Construct(
-                flashlightItem,
-                healthItem,
-                staminaItem,
-                damageItem,
-                backpackItem);
+            var itemExists = ItemExists(itemType);
+
+            if (itemExists)
+            {
+                var existingItem = _items.Find(i => i.ItemType == itemType);
+                AddItemCount(existingItem);
+
+                return existingItem.ItemCount;
+            }
+
+            var item = SpawnNewItem(itemType, itemCount);
+            _items.Add(item);
+
+            return item.ItemCount;
         }
 
-        public void AddFlashlight(int batteries)
+        private bool ItemExists(StaticItemType itemType)
         {
-            flashlightFillFrame.SetActive(true);
-            flashlightEmptyFrame.SetActive(false);
-            flashlightLogo.SetActive(true);
-
-            flashlightBatteries.text = batteries.ToString();
-        }
-        
-        public void AddHealth(int batteries)
-        {
-            healthFillFrame.SetActive(true);
-            healthEmptyFrame.SetActive(false);
-            healthLogo.SetActive(true);
-
-            healthPoints.text = batteries.ToString();
-        }
-        
-        public void AddStamina(int batteries)
-        {
-            staminaFillFrame.SetActive(true);
-            staminaEmptyFrame.SetActive(false);
-            staminaLogo.SetActive(true);
-
-            staminaPoints.text = batteries.ToString();
-        }
-        
-        public void AddDamage(int batteries)
-        {
-            damageFillFrame.SetActive(true);
-            damageEmptyFrame.SetActive(false);
-            damageLogo.SetActive(true);
-
-            damagePoints.text = batteries.ToString();
-        }
-        
-        public void AddBackpack(int batteries)
-        {
-            backpackFillFrame.SetActive(true);
-            backpackEmptyFrame.SetActive(false);
-            backpackLogo.SetActive(true);
-
-            backpackPoints.text = batteries.ToString();
+            var existingItem = _items.Find(i => i.ItemType == itemType);
+            
+            return existingItem != null;
         }
 
-        public void UpdateBatteries(int batteries)
+        private void AddItemCount(StaticItem itemToAdd)
         {
-            flashlightBatteries.text = batteries.ToString();
+            itemToAdd.StaticItemRenderer.RenderItem(++itemToAdd.ItemCount);
         }
         
-        public void UpdateHealth(int batteries)
+        public void UseBattery()
         {
-            healthPoints.text = batteries.ToString();
+            var flashlightItem = _items.Find(i => i.ItemType == StaticItemType.Flashlight);
+            
+            flashlightItem.StaticItemRenderer.RenderItem(--flashlightItem.ItemCount);
         }
-        
-        public void UpdateStamina(int batteries)
+
+        private StaticItem SpawnNewItem(StaticItemType itemType, int itemCount)
         {
-            staminaPoints.text = batteries.ToString();
-        }
-        
-        public void UpdateDamage(int batteries)
-        {
-            damagePoints.text = batteries.ToString();
-        }
-        
-        public void UpdateBackpack(int batteries)
-        {
-            backpackPoints.text = batteries.ToString();
+            var spawnedItem = Instantiate(itemPrefab, itemContainer);
+            var staticItemRenderer = spawnedItem.GetComponent<StaticItemRenderer>();
+
+            spawnedItem.name = itemType.ToString();
+            staticItemRenderer.Construct(itemType, itemCount);
+
+            var staticItem = new StaticItem
+            {
+                ItemType = itemType,
+                ItemCount = itemCount,
+                StaticItemRenderer = spawnedItem.GetComponent<StaticItemRenderer>()
+            };
+            
+            return staticItem;
         }
     }
 }

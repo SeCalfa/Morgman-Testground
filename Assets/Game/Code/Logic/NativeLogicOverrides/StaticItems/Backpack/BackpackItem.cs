@@ -6,11 +6,6 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Backpack
     {
         public int Count { get; set; } = 1;
 
-        public BackpackItem(GameObject item)
-        {
-            item.SetActive(true);
-        }
-
         public void Update()
         {
             

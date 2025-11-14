@@ -4,4 +4,13 @@ namespace Game.Code
     {
         Right, Forward
     }
+
+    public enum StaticItemType
+    {
+        Backpack,
+        Flashlight,
+        Damage,
+        Health,
+        Stamina
+    }
 }

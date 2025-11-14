@@ -11,13 +11,8 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Damage
 
         private Vector2 _axeDamageStart, _axeDamageDelta;
         private float _pistolDamageStart, _pistolDamageDelta, _shotgunDamageStart, _shotgunDamageDelta;
-        
-        public int Count { get; set; } = 1;
-        
-        public DamageItem(GameObject item)
-        {
-            item.SetActive(true);
-        }
+
+        private int _count = 1;
 
         public void Construct(MeleeController axe, WeaponController pistol, WeaponController shotgun)
         {
@@ -40,11 +35,13 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Damage
             
         }
 
-        public void UpdateDamage()
+        public void UpdateDamage(int count)
         {
-            _axe.AttackDamage = new Vector2Int((int)(_axeDamageStart.x + _axeDamageDelta.x * Count), (int)(_axeDamageStart.y + _axeDamageDelta.y * Count));
-            _pistol.weaponSettings.weaponDamage = (int)(_pistolDamageStart + _pistolDamageDelta * Count);
-            _shotgun.weaponSettings.weaponDamage = (int)(_shotgunDamageStart + _shotgunDamageDelta * Count);
+            _count = count;
+            
+            _axe.AttackDamage = new Vector2Int((int)(_axeDamageStart.x + _axeDamageDelta.x * _count), (int)(_axeDamageStart.y + _axeDamageDelta.y * _count));
+            _pistol.weaponSettings.weaponDamage = (int)(_pistolDamageStart + _pistolDamageDelta * _count);
+            _shotgun.weaponSettings.weaponDamage = (int)(_shotgunDamageStart + _shotgunDamageDelta * _count);
         }
     }
 }

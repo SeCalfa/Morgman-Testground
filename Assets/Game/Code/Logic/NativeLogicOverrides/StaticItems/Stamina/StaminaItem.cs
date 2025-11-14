@@ -6,11 +6,6 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Stamina
     {
         public int Count { get; set; } = 1;
         
-        public StaminaItem(GameObject item)
-        {
-            item.SetActive(true);
-        }
-        
         public void Update()
         {
             

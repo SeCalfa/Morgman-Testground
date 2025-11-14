@@ -6,7 +6,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
 {
     public class FlashlightItem : IInventoryItem
     {
-        private InputAction _input;
+        private readonly InputAction _input = InputHandler.Instance.inputActionAsset.FindAction(FLASHLIGHT_ACTION_NAME, true);
 
         private StaticInventoryPresenter _staticInventoryPresenter;
         private NewFlashlight _flashlight;
@@ -20,16 +20,9 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
         private const string FLASHLIGHT_ACTION_NAME = "Flashlight";
         private const float MAX_POWER = 100f;
         private const int MAX_BATTERIES = 5;
-        
-        public FlashlightItem(GameObject item)
-        {
-            item.SetActive(true);
-        }
 
         public void Construct(StaticInventoryPresenter staticInventoryPresenter, NewFlashlight flashlight, FlashlightPresenter flashlightPanel, float powerPercentPerSecond)
         {
-            _input = InputHandler.Instance.inputActionAsset.FindAction(FLASHLIGHT_ACTION_NAME, true);
-            
             _staticInventoryPresenter = staticInventoryPresenter;
             _flashlight = flashlight;
             _flashlightPanel = flashlightPanel;
@@ -97,7 +90,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
             ActiveBatteries -= 1;
             _currentPower = MAX_POWER;
             _flashlightPanel.UpdateBatteries(ActiveBatteries);
-            _staticInventoryPresenter.UpdateBatteries(ActiveBatteries);
+            _staticInventoryPresenter.UseBattery();
             return true;
         }
 
