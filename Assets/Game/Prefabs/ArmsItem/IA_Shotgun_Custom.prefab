@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7458265071283975577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5127327774576962014}
+  - component: {fileID: 1544118428920416718}
+  - component: {fileID: 6258795149232693147}
+  - component: {fileID: 7825350792116334257}
+  - component: {fileID: 3860297253530147272}
+  - component: {fileID: 1869078286370481829}
+  - component: {fileID: 6128891551420267476}
+  m_Layer: 9
+  m_Name: IA_Shotgun_Custom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5127327774576962014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458265071283975577}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
+  m_LocalPosition: {x: -3.0429993, y: 1.2120001, z: 6.9743233}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!33 &1544118428920416718
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458265071283975577}
+  m_Mesh: {fileID: 3814378201483603881, guid: 049d1551f352c86468fa157cc35bd929, type: 3}
+--- !u!23 &6258795149232693147
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458265071283975577}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 856ba3490c085b44da2a76fa7902bb2a, type: 2}
+  - {fileID: 2100000, guid: 2c325ae987e3e9244b0bd18aed304615, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7825350792116334257
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458265071283975577}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.04575153, y: 0.21892032, z: 1.0239164}
+  m_Center: {x: -0.00045524724, y: -0.051854685, z: -0.027206406}
+--- !u!54 &3860297253530147272
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458265071283975577}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1869078286370481829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458265071283975577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fcb51f6d678d2498af4fb5f59a2c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTitle: Shotgun
+  itemType: 2
+  examineType: 1
+  examineRotate: 2
+  messageType: 1
+  disableType: 1
+  messageTips:
+  - InputAction: '?'
+    Message: EQUIP SHOTGUN
+    MessageKey: Interact.Use
+    TextUppercased: 0
+  - InputAction: Fire
+    Message: FIRE
+    MessageKey: Input.Fire
+    TextUppercased: 0
+  - InputAction: Zoom
+    Message: ZOOM
+    MessageKey: Input.Zoom
+    TextUppercased: 0
+  - InputAction: Reload
+    Message: RELOAD
+    MessageKey: Input.Reload
+    TextUppercased: 0
+  titleOrMsg: 
+  examineTitle: 
+  paperText: 
+  titleMsgKey: 
+  examineKey: 
+  inventoryID: 36
+  switcherID: 0
+  invExpandAmount: 5
+  itemAmount: 1
+  paperFontSize: 15
+  examineDistance:
+    min: 0.6
+    max: 0.7
+    value: 0.7
+  messageTime: 3
+  useInvTitle: 0
+  useItemTitle: 1
+  useDefaultHint: 0
+  autoShortcut: 1
+  autoSwitch: 0
+  interactShowTitle: 0
+  allowExamineTake: 1
+  floatingIcon: 1
+  faceCamera: 1
+  mouseClickPickup: 0
+  enableCursor: 0
+  pickupSound: {fileID: 8300000, guid: 2fe5d5f7def4d0a4481a255beb4eadfb, type: 3}
+  pickupVolume: 0.75
+  examineSound: {fileID: 0}
+  examineVolume: 1
+  faceRotation: {x: 0, y: -90, z: 0}
+  itemCustomData: []
+  collidersDisable: []
+  collidersEnable: []
+  allowedInteracts: []
+  isExamining: 0
+  isChild: 0
+  isExamined: 0
+  floatingIconState: 1
+  lastFloorPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &6128891551420267476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458265071283975577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6974dbc72c8f9d042868729f4ea8f811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
