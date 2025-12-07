@@ -6,7 +6,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Health
     {
         public void UseObject()
         {
-            StaticInventoryManager.Instance.AddHealth();
+            StaticInventoryManager.Instance.AddHealth(1);
         }
     }
 }

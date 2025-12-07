@@ -13,4 +13,11 @@ namespace Game.Code
         Health,
         Stamina
     }
+
+    public enum Papers
+    {
+        Paper1 = 0,
+        Paper2 = 1,
+        Paper3 = 2
+    }
 }

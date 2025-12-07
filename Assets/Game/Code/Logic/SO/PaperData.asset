@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f06483ef51b4349a4bf153a91eb97e, type: 3}
+  m_Name: PaperData
+  m_EditorClassIdentifier: 
+  title1: White
+  sprite1: {fileID: 21300000, guid: 023c351b1f9b1f64da77f33aa1e17421, type: 3}
+  title2: Green
+  sprite2: {fileID: 21300000, guid: ecbe81b1ea1333c449b34a9091791125, type: 3}
+  title3: Red
+  sprite3: {fileID: 21300000, guid: 77182f9a1be73b242a9b8d7c2d524f1a, type: 3}

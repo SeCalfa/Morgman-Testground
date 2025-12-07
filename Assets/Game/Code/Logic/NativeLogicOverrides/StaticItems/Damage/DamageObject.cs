@@ -6,7 +6,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Damage
     {
         public void UseObject()
         {
-            StaticInventoryManager.Instance.AddDamage();
+            StaticInventoryManager.Instance.AddDamage(1);
         }
     }
 }

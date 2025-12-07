@@ -1,4 +1,3 @@
-using System.Collections;
 using HFPS.Systems;
 using UnityEngine;
 
@@ -8,6 +7,9 @@ namespace Game.Code.Logic.NativeLogicOverrides
     {
         [SerializeField] private AudioClip[] woodCrack;
         [SerializeField] private GameObject brakeEffect;
+
+        [SaveableField, HideInInspector]
+        public bool broken;
         
         private AudioSource _audioSource;
         private DynamicObjectPlank _dynamicObjectPlank;
@@ -16,6 +18,15 @@ namespace Game.Code.Logic.NativeLogicOverrides
         {
             _audioSource = GetComponent<AudioSource>();
             _dynamicObjectPlank = GetComponent<DynamicObjectPlank>();
+
+            BrakeOnStart();
+        }
+
+        private void BrakeOnStart()
+        {
+            if (!broken) return;
+            _dynamicObjectPlank.UseObject();
+            gameObject.SetActive(false);
         }
 
         public void ApplyDamage(int amount)

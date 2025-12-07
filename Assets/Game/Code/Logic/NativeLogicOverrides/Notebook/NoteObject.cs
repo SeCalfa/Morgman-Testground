@@ -5,8 +5,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.Notebook
 {
     public class NoteObject : MonoBehaviour
     {
-        [SerializeField] private string noteTitle;
-        [SerializeField] private Sprite contentSprite;
+        [SerializeField] private Papers papers;
         
         private InteractiveItem _interactiveItem;
 
@@ -17,7 +16,8 @@ namespace Game.Code.Logic.NativeLogicOverrides.Notebook
 
         public void UseObject()
         {
-            Presenter.Notebook.Instance.AddNote(noteTitle, contentSprite);
+            Presenter.Notebook.Instance.AddNote(papers);
+            Presenter.Notebook.Instance.AddPaperList(papers);
         }
     }
 }

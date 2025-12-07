@@ -6,7 +6,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Backpack
     {
         public void UseObject()
         {
-            StaticInventoryManager.Instance.AddBackpack();
+            StaticInventoryManager.Instance.AddBackpack(1);
         }
     }
 }

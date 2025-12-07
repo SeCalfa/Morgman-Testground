@@ -6,7 +6,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Stamina
     {
         public void UseObject()
         {
-            StaticInventoryManager.Instance.AddStamina();
+            StaticInventoryManager.Instance.AddStamina(1);
         }
     }
 }

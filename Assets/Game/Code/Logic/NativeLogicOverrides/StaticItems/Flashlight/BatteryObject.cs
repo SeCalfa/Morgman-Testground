@@ -6,7 +6,7 @@ namespace Game.Code.Logic.NativeLogicOverrides.StaticItems.Flashlight
     {
         public void UseObject()
         {
-            StaticInventoryManager.Instance.AddFlashlightBattery();
+            StaticInventoryManager.Instance.AddFlashlightBattery(1);
         }
     }
 }

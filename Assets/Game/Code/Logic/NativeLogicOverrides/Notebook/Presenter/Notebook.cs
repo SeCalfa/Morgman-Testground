@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using Game.Code.Logic.SO;
 using HFPS.Systems;
+using Newtonsoft.Json.Linq;
 using ThunderWire.Input;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,8 +10,10 @@ using UnityEngine.UI;
 
 namespace Game.Code.Logic.NativeLogicOverrides.Notebook.Presenter
 {
-    public class Notebook : MonoBehaviour
+    public class Notebook : MonoBehaviour, ISaveable
     {
+        [SerializeField] private NotebookData notebookData;
+        [Space]
         [SerializeField] private Transform titlesContent;
         [SerializeField] private Image contentImage;
         [Space]
@@ -19,6 +23,9 @@ namespace Game.Code.Logic.NativeLogicOverrides.Notebook.Presenter
         private InputAction _input;
         private bool _isActive;
         private readonly List<Note> _notes = new();
+
+        private List<Papers> _papersList = new();
+        private Papers[] _papers;
 
         public static Notebook Instance;
 
@@ -56,17 +63,47 @@ namespace Game.Code.Logic.NativeLogicOverrides.Notebook.Presenter
             _isActive = !_isActive;
         }
 
-        public void AddNote(string title, Sprite content)
+        public void OnLoad(JToken token)
         {
-            var note = new Note
+            _papers = token["allNotes"].ToObject<Papers[]>();
+            _papersList = _papers.ToList();
+            
+            LoadNotes();
+        }
+
+        public Dictionary<string, object> OnSave()
+        {
+            _papers = _papersList.ToArray();
+            
+            return new Dictionary<string, object>
             {
-                Title = title,
-                Sprite = content
+                { "allNotes", _papers },
             };
+        }
+
+        public void AddNote(Papers paper)
+        {
+            var newNote = notebookData.GetNote(paper);
+            _notes.Add(newNote);
             
-            _notes.Add(note);
-            
+            _papers = null;
+
             Render();
+        }
+
+        public void AddPaperList(Papers paper)
+        {
+            _papersList.Add(paper);
+        }
+
+        private void LoadNotes()
+        {
+            var papers = _papers;
+            
+            foreach (var paper in papers)
+            {
+                AddNote(paper);
+            }
         }
 
         private void Render()
